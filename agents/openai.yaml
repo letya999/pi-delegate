@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pi / OMP Delegate"
+  short_description: "Delegate tasks to Pi or OMP headlessly"
+  default_prompt: "Use $pi-delegate to run this task through Pi or OMP headlessly and return the captured result."
