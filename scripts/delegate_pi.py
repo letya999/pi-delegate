@@ -104,6 +104,16 @@ def main() -> int:
             file=sys.stderr,
         )
         return 127
+    if not Path(executable).is_file():
+        resolved = shutil.which(executable)
+        if not resolved:
+            variable = "OMP_BIN" if args.runtime == "omp" else "PI_BIN"
+            print(
+                f"error: {args.runtime} executable not found; set {variable} or add it to PATH",
+                file=sys.stderr,
+            )
+            return 127
+        executable = resolved
     try:
         seconds = parse_duration(args.timeout)
     except ValueError as exc:
@@ -157,7 +167,8 @@ def main() -> int:
     try:
         completed = run_bounded(command, cwd, seconds + 15, child_env)
     except subprocess.TimeoutExpired as exc:
-        stdout, stderr = exc.stdout or "", exc.stderr or ""
+        stdout = exc.stdout.decode("utf-8", "replace") if isinstance(exc.stdout, bytes) else (exc.stdout or "")
+        stderr = exc.stderr.decode("utf-8", "replace") if isinstance(exc.stderr, bytes) else (exc.stderr or "")
         exit_code, timed_out = 124, True
     except OSError as exc:
         print(f"error: could not start {args.runtime}: {exc}", file=sys.stderr)
