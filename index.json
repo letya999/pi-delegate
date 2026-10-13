@@ -5,9 +5,9 @@
       "name": "pi-delegate",
       "type": "archive",
       "description": "Run Pi Coding Agent or Oh My Pi (OMP) as a bounded headless delegate. Use when the user asks to delegate to Pi/OMP, test a Pi setup through a real model, or obtain a Pi-backed second opinion. Do not use for interactive sessions or unrelated CLIs.",
-      "url": "https://raw.githubusercontent.com/letya999/pi-delegate-skill/main/dist/pi-delegate.zip",
+      "url": "https://raw.githubusercontent.com/letya999/pi-delegate/main/dist/pi-delegate.zip",
       "digest": "sha256:2fd70cb3683ea1ca3b7f70d3c527d5848cf8fa12085dfd902261b15a4b935013",
-      "repository": "https://github.com/letya999/pi-delegate-skill",
+      "repository": "https://github.com/letya999/pi-delegate",
       "license": "MIT",
       "publisher": "Artem Letyushev"
     }
