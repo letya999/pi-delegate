@@ -1,4 +1,13 @@
 {
   "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
-  "skills": ["pi-delegate"]
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Delegates",
+      "description": "Run Pi Coding Agent or Oh My Pi (OMP) as a bounded headless delegate.",
+      "skills": [
+        "pi-delegate"
+      ]
+    }
+  ]
 }
