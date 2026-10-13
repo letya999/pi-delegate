@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/letya999/pi-delegate-skill"><img src="https://img.shields.io/badge/статус-активен-brightgreen" alt="статус"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/лицензия-MIT-blue" alt="Лицензия: MIT"></a>
-  <a href="https://skills.sh"><img src="https://img.shields.io/badge/skills.sh-доступен-black" alt="skills.sh"></a>
+  <a href="https://skills.sh/letya999/pi-delegate-skill"><img src="https://skills.sh/b/letya999/pi-delegate-skill" alt="skills.sh"></a>
   <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/cli-pi%20%7C%20omp-purple" alt="CLI: pi | omp">
 </p>
